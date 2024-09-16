@@ -5,7 +5,7 @@ LOG_FILE=/var/log/$CONFIG.log
 RULE_PATH=/etc/config/${CONFIG}_rule
 Date=$(date "+%Y-%m-%d %H:%M:%S")
 
-url_main="https://raw.githubusercontent.com/hq450/fancyss/master/rules"
+url_main="https://raw.githubusercontent.com/ikunclub/fancyss/master/rules"
 
 update=$1
 gfwlist_update=0
