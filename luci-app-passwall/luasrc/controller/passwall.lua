@@ -219,7 +219,7 @@ function set_node()
     luci.sys.call("uci set passwall.@global[0]." .. protocol .. "_node" ..
                       number .. "=" .. section ..
                       " && uci commit passwall && /etc/init.d/passwall restart > /dev/null 2>&1 &")
-    luci.http.redirect(luci.dispatcher.build_url("admin", "vpn", "passwall",
+    luci.http.redirect(luci.dispatcher.build_url("admin", "services", "passwall",
                                                  "log"))
 end
 
